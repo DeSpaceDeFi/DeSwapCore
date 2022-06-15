@@ -10,17 +10,17 @@ module.exports = {
     hardhat: {
       saveDeployments: false,
     },
-    polygonMumbai: {
-      url: process.env.POLY_URL,
-      accounts: [process.env.PK],
+    cube: {
+      url: process.env.CUBE_URL,
+      accounts: [process.env.PK_MAIN],
     },
   },
 
-  etherscan: {
-    apiKey: {
-      polygonMumbai: process.env.POLYGONSCAN_API_KEY,
-    },
-  },
+  // etherscan: {
+  //   apiKey: {
+  //     polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+  //   },
+  // },
 
   solidity: {
     compilers: [
