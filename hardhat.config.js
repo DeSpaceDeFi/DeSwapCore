@@ -14,13 +14,24 @@ module.exports = {
       url: process.env.CUBE_URL,
       accounts: [process.env.PK_MAIN],
     },
+    bsc: {
+      url: process.env.BSC_URL,
+      accounts: [process.env.PK_MAIN],
+    },
+    polygon: {
+      url: process.env.POLY_URL,
+      accounts: [process.env.PK_MAIN],
+    },
   },
 
-  // etherscan: {
-  //   apiKey: {
-  //     polygonMumbai: process.env.POLYGONSCAN_API_KEY,
-  //   },
-  // },
+  etherscan: {
+    //{
+    apiKey:
+      //polygonMumbai:
+      process.env.POLYGONSCAN_API_KEY,
+    //bsc: process.env.BSC_KEY,
+    //},
+  },
 
   solidity: {
     compilers: [
